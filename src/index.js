@@ -1,21 +1,20 @@
-
-function min (array) {
+exports.min = function min (array) {
   if (!array || array.length == 0)
   return 0;
   else{
         return Math.min.apply(Math, array);
   }
-}
+};
 
-function max (array) {
+exports.max = function max (array) {
   if (!array || array.length == 0)
   return 0;
   else{
     return Math.max.apply(Math, array);
   }
-}
+};
 
-function avg (array) {
+exports.avg = function avg (array) {
   if (!array || array.length == 0)
   return 0;
   else{
@@ -24,4 +23,4 @@ function avg (array) {
         return array.reduce((a, b) => (a + b)) / array.length;
   }
   
-}
+};
